@@ -1,0 +1,24 @@
+<grammar>
+<rule>(S (NP VP))</rule><!--句子=名词短语+动词短语-->
+<rule>(S (VP))</rule><!--句子=动词短语-->
+<rule>(S (IN S S))</rule><!--句子=介词+从句+从句-->
+<rule>(NP (DT NPA))</rule><!--名词短语=冠词+名短-->
+<rule>(NP (NPA))</rule><!--名词短语=无冠词名词短语-->
+<!--分开NP和NPA是考虑到冠词必须在形容词之前-->
+<rule>(NPA (JJ NPA))</rule><!--名短=形容词+名短-->
+<rule>(NPA (NN))</rule><!--名词短语=名词-->
+<rule>(NPA (PRP))</rule><!--名词短语=代词-->
+<rule>(VP (VB IP))</rule><!--动词短语=动词+宾语-->
+<rule>(VP (VBZ IP))</rule><!--动词短语=动词+宾语-->
+<rule>(VP (VBA IP CP))</rule><!--动词短语=动词+宾语+宾补-->
+<rule>(VP (MD VP))</rule><!--动词短语=情态动词+动词短语-->
+<rule>(VP (BE BP))</rule><!--动词短语=系动词+表语-->
+<rule>(IP (IP CP))</rule><!--双宾语=宾语+宾语补足语-->
+<rule>(IP (NP))</rule><!--宾语=名词短语-->
+<rule>(IP (TO NP))</rule><!--宾语=to+名词短语-->
+<rule>(IP (NP DP))</rule><!--宾语=名词短语+状语-->
+<rule>(DP (IN NP))</rule><!--状语=介词+名词短语-->
+<rule>(CP (NP))</rule><!--宾语补足语=名词短语-->
+<rule>(CP (DP))</rule><!--宾语补足语=状语-->
+<rule>(BP (VBN))</rule><!--表语=过去分词-->
+</grammar>
